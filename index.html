@@ -10,20 +10,17 @@
     <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
     <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-video-shader/master/dist/aframe-vid-shader.min.js"></script>
     <script src="/makery.js"></script>
     </head>
   <body>
     <a-scene> 
       <a-assets>
-        <video id="texture" src="https://github.com/nah1g14/Aframe-glitch/blob/master/small.mp4"
-    crossOrigin="anonymous"
-    autoplay="false"
-    loop="true"
-    style="display: none">
+        <video id="texture" src="https://github.com/nah1g14/Aframe-glitch/blob/master/small.mp4">
         </video>
       
       </a-assets>
-    
+      <a-entity geometry="primitive:box;" material="shader:video;src:url(https://github.com/nah1g14/Aframe-glitch/blob/master/small.mp4);"></a-entity>
       <a-plane src="#texture" position="0 0 -4" width="4" height="4" color="#7BC8A4" shadow></a-plane>
       
       <a-sky color="#ECECEC"></a-sky>
