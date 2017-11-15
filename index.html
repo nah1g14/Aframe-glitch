@@ -2,27 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>360&deg; Image Gallery</title>
+    <title>Video Playing</title>
     <meta name="description" content="JavaScript - A-Frame School">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
-    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
-    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
-    <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
-    <script src="https://rawgit.com/mayognaise/aframe-video-shader/master/dist/aframe-vid-shader.min.js"></script>
-    <script src="/makery.js"></script>
     </head>
   <body>
     <a-scene> 
       <a-assets>
-        <video id="video" autoplay loop= "true" src="https://github.com/nah1g14/Aframe-glitch/blob/master/small.mp4" webkit-playsinline>
-        </video>
-      
+        <video webkit-playsinline id="video" crossorigin="anonymous" autoplay loop="true" src="https://nah1g14.github.io/Aframe-glitch/small.mp4">
+        </video>video
       </a-assets>
-      
-      <video src="#video" width="16" height="9" position="0 1 -1"></video> 
-      <a-sky color="#ECECEC"></a-sky>
+      <a-video src="#video" width="16" height="9" position="0 1 -3"></a-video> 
     </a-scene>
   </body>
 </html>
